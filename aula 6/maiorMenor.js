@@ -14,6 +14,13 @@ console.log (condiçao3) //false
 
 /*
 const condiçao4 = 2 > 1
-console.log (condiçao4) //true
+console.log (condiçao4) //true 
 */
+
+/*
+let resultado = 100
+resultado = resultado + 10
+console.log (resultado)
+*/
+
 
