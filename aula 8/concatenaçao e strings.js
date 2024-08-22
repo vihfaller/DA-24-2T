@@ -129,9 +129,11 @@ letras.splice(5,2)
 
 //--------------------------------------------------    EXERCICIO
 
+/*
 const ordem = ["1","2","3","4","5","6"]
 ordem.push(7)
 console.log (ordem)
 ordem.splice (3,2)
 console.log (ordem)
 console.log (ordem.length) 
+*/
