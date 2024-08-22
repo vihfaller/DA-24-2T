@@ -1,4 +1,3 @@
-
 let cabeloMarrom = "sim"
 let relogio = "sim"
 let sandalia = "nao" 
