@@ -1,0 +1,43 @@
+-----codigo------
+
+let parImpar = prompt("Digite o numero para ver se é par ou impar:")
+converterParParaImpar(parImpar)
+
+
+function converterParParaImpar (numero) {
+    let resultado
+    if (numero % 2 == 0) {
+        resultado = "par"
+    }else {
+        resultado = "impar"
+    }
+    console.log(`O numero ${numero} é ${resultado}`)
+}
+
+teste 1: digitei 6 e resultou em par
+teste 2: digitei 7 e resultou em impar
+teste 3: digitei 4 e resultou em par
+teste 4: digitei 465 e resultou em impar
+teste 5: digitei 4516 e resultou em par
+
+
+---------INDEX----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="teste"></script>
+</body>
+</html>
+
+
+Relatorio de analises:
+- Apos a correçao do erro, todos os testes resultaram como o esperado, assim finalizando-o com sucesso. 
+- A pagina respondia com erro em todos os meus testes até eu ver que nao coloquei o nome do arquivo certo para buscar e assim mostrar o 
+  resultado que eu desejava;
