@@ -1,3 +1,9 @@
+/* 
+- Existe 3 maneiras de escrever strings: aspas duplas, aspas simpless e crase;
+- formando nova strings: concatenaçao e template string
+- protótipo de strings: length, to LowerCase(), toUpperCase(), trim(), includes(caracteres) e replaceAll(chars1, chars2)
+
+
 /*
 --------------------------------------------------    CONCATENAÇAO, preenchimento com os dados 
 const nome = prompt ("Qual seu nome?")
@@ -22,7 +28,7 @@ console.log (nome.length)
 */
 
 /*
---------------------------------------------------    TOLOWERCASE, deixar o texto em letra minuscula
+--------------------------------------------------    TOLOWERCASE(), deixar o texto em letra minuscula
 const nome = 'Vitoria'
 console.log(nome.toLowerCase())
 */
@@ -92,6 +98,8 @@ console.log(pokemons.length)
 */
 
 /*
+--------------------------------------------------    INCLUDES 
+
 const seriesBoas = ["you","the bigbang theory"]
 console.log(seriesBoas.includes("you"))
 
@@ -99,7 +107,7 @@ console.log (seriesBoas.includes
     ("Game of Thrones"))
 */ 
 
-//--------------------------------------------------   PUSH , adiciona um ou mais elementos ao final de um array
+//--------------------------------------------------   PUSH , adiciona um ou mais elementos ao final de um array, começa em 0.
 
 /*
 const  numeros = [1,2,3]
