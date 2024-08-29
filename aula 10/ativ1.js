@@ -172,10 +172,13 @@ if (!cond1){ -----------> diferença
 */
 
 /*
-let ensinoMedio = prompt ("Já concluiu o ensino médio?")
-console.log (ensinoMedio)
-let idade = prompt ("Possui 18 anos ou mais?")
-console.log (idade)
-let faculdade = prompt ("Estuda em alguma instituiçao de ensino superior?")
-console.log (facul)
+let maiorIdade = prompt('Você tem mais de 18 anos?")
+let ensMedio = prompt("Você terminou o Ensino Médio?"
+let outraFacul = prompt("Você faz faculdade em outro lugar?"
+
+If(maiorIdade === 'Sim' && ensMedio === 'Sim' && outraFacul === 'Não') {
+console.log("Você pode estudar na nossa faculdade")
+} else { 
+console.log("Você não pode estudar na nossa faculdade")
+}
 */
