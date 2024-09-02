@@ -129,6 +129,7 @@ if (comed && comedy) {
 }
 */ 
 
+/*
 let nome = prompt ('Qual seu nome?') 
 let tipo = prompt ('Qual tipo de jogo irá assistir? IN, DO')
 let etapa = prompt  ('Qual a etapa? SF, DT, FI').toUpperCase()
@@ -174,4 +175,4 @@ console.log ('Categoria:', categoria)
 console.log ('Valor do ingresso:', valor.toFixed(2))
 console.log ("Quantidade:", quantidade)
 console.log ('Valor total:', valorTotal.toFixed(2))
-
+*/

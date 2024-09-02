@@ -1,5 +1,5 @@
 /* 
-- Existe 3 maneiras de escrever strings: aspas duplas, aspas simpless e crase;
+- Existe 3 maneiras de escrever strings: aspas duplas, aspas simples e crase;
 - formando nova strings: concatenaçao e template string
 - protótipo de strings: length, to LowerCase(), toUpperCase(), trim(), includes(caracteres) e replaceAll(chars1, chars2)
 
