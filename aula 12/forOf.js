@@ -101,9 +101,9 @@ for (let numero of numeros){
 console.log ('a soma dos numero pares é: ',soma)
 */
 
-
-//usar push, length
-const palavrasL = ['cefaleia'/*8*/,'australoptecos'/*14*/,'papelaria'/*9*/,'dinossauro'/*10*/,'amor'/*4*/]
+/*
+-->usar push, length
+const palavrasL = ['cefaleia'8,'australoptecos'14,'papelaria9/,'dinossauro'/,'amor']
 
 const palavrasMaisLonga = [palavrasL[0]]
 for(let palavra of palavrasL){
@@ -112,5 +112,14 @@ for(let palavra of palavrasL){
     }
 }
 console.log(palavrasMaisLonga)
+*/
+
+
+
+
+
+
+
+
 
 
