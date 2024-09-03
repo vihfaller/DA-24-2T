@@ -54,7 +54,7 @@ for (let bicho of nomes){
 console.log ('os nomes dos bichos sao:', frase)
 */
 
-
+/*
 const arrayOriginal = [52,3,8,20,87,45]
 const pares = []
 
@@ -68,4 +68,4 @@ for (let numero of arrayOriginal){
 for (let i = 0; i < arrayOriginal.length; i++){
     console.log (`O elemento do index ${i} é: ${arrayOriginal[i]}.`)
 }
-
+*/
