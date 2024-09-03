@@ -23,3 +23,4 @@ console.log (resultado)
 const restoDivisao = 234%5
 console.log ("O resto da divisao é", restoDivisao) 
 */
+
