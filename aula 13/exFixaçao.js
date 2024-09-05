@@ -18,7 +18,7 @@ for (let numero of lista){
     }
 }
 ------> vai ser impresso os numeros da array após o numero 18.
-------> sim, trocando o valor do 18 por 10, ou colocar let listas of lista.
+------> sim, poderiamos simplesmente utilizar os colchetes lista[indice].
 */
 
 /*
