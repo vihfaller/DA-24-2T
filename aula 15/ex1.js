@@ -132,6 +132,8 @@ console.log ('a area é:', resulado)
 // vampiro: pele branca, gelado, brilha ao sol, adora sangue -- lobisomem: possui pelos, se transforma com a lua cheia, parece um cachorro gigante, possui varios dentes,
 // tem garras afiadas -- humano: possui duas pernas, é carnivoro e herbivoro, tem muito no planeta, nao tem garras, nao tem dentes afiados para caçar.
 
+
+/*
 let pele
 
 
@@ -162,7 +164,7 @@ if (desconhecido === 'nenhum'){
     console.log ('voce nao é nada')
 }
 console.log (`voce é um ${tipo} das opçoes`)
-
+*/
 
 
 
