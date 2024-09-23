@@ -122,6 +122,7 @@ function menu() {
 
 menu()
 
+// ----------------------------------------------------------------------------------------------------------------
 
 // Importa a biblioteca readline-sync que permite interação do usuário no terminal
 const readlineSync = require('readline-sync') 
