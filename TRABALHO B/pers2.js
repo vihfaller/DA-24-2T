@@ -1,139 +1,14 @@
-const readlineSync = require('readline-sync') 
-let personagens = [] 
-
-function criarPersonagemComPrompt() {
-    let nome = readlineSync.question('Digite o nome do personagem: ') 
-    let classe = readlineSync.question('Digite a classe do personagem: ') 
-    let nivel = Number(readlineSync.question('Digite o nível do personagem: ')) 
-    let hp = Number(readlineSync.question('Digite os pontos de vida (HP) do personagem: ')) 
-    let habilidades = readlineSync.question('Digite as habilidades do personagem: ').split(',')
-
-    return {
-        nome: nome, 
-        classe: classe, 
-        nivel: nivel, 
-        hp: hp, 
-        habilidades: habilidades, 
-        historicoAcoes: [] 
-    }
-}
-
-function registrarAcao(personagem, acao) {
-    personagem.historicoAcoes.push(acao) 
-    console.log(personagem.nome + " realizou a ação: " + acao) 
-}
-
-function exibirDetalhes(personagem) {
-    console.log("--------------------------------------------------")
-    console.log("| Nome          | " + personagem.nome)
-    console.log("| Classe        | " + personagem.classe)
-    console.log("| Nível         | " + personagem.nivel)
-    console.log("| HP            | " + personagem.hp)
-    console.log("| Habilidades   | " + personagem.habilidades.join(', '))
-
-    if (personagem.historicoAcoes.length > 0) {
-        console.log("| Histórico     | " + personagem.historicoAcoes.join(", "))
-    } else {
-        console.log("| Histórico     | Nenhum") 
-    }
-
-    console.log("--------------------------------------------------")
-}
-
-function adicionarPersonagem(personagem) {
-    personagens.push(personagem);
-    console.log(personagem.nome + " foi adicionado milorde.") 
-}
-
-function buscarPersonagem(nome) {
-    for (let i = 0; i < personagens.length; i++) { 
-        if (personagens[i].nome === nome) { 
-            return personagens[i] 
-        }
-    }
-    return null; 
-}
-
-function listarPersonagens() {
-    console.log("--------------------------------------------------")
-    console.log("| Nome          | Classe       | Nível | HP  ")
-    console.log("--------------------------------------------------")
-    for (let i = 0; i < personagens.length; i++) {
-        const personagem = personagens[i]; 
-        console.log("| " + personagem.nome + " | " + personagem.classe + " | " + personagem.nivel + " | " + personagem.hp)
-    }
-    console.log("--------------------------------------------------")
-}
-
-function excluirPersonagem(nome) {
-    for (let i = 0; i < personagens.length; i++) { 
-        if (personagens[i].nome === nome) { 
-            personagens.splice(i, 1) 
-            console.log(nome + " O mestre nos traiu! Malvado, ardiloso, falso!.") 
-            return 
-        }
-    }
-    console.log("Ainda há esperanca....Personagem não encontrado.") 
-}
-
-function criarVariosPersonagens() {
-    let numPersonagens = Number(readlineSync.question("Quantos personagens deseja criar meu senhor? ")) 
-    for (let i = 0; i < numPersonagens; i++) { 
-        let personagem = criarPersonagemComPrompt() 
-        adicionarPersonagem(personagem) 
-    }
-}
-
-function menu() {
-    let opcao 
-    do {
-        opcao = readlineSync.question(
-            'Meu precioso! Escolha uma opcao:\n1. Criar Personagem\n2. Listar Personagens\n3. Buscar Personagem\n4. Excluir Personagem\n5. Sair\n'
-        )
-        switch (opcao) { 
-            case "1":
-                criarVariosPersonagens() 
-                break;
-            case "2":
-                listarPersonagens() 
-                break;
-            case "3":
-                let nomeBusca = readlineSync.question("Digite o nome do personagem que deseja buscar meu senhor: ") 
-                let personagem = buscarPersonagem(nomeBusca) 
-                if (personagem) {
-                    exibirDetalhes(personagem) 
-                } else {
-                    console.log("Ainda há esperança...Personagem não encontrado.") 
-                }
-                break;
-            case "4":
-                let nomeExclusao = readlineSync.question("Digite o nome do personagem que deseja excluir: ") 
-                excluirPersonagem(nomeExclusao) 
-                break;
-            case "5":
-                console.log("Eu não temo a morte.Saindo do sistema.") 
-                break;
-            default:
-                console.log("Opção inválida.") 
-                break;
-        }
-    } while (opcao !== "5") 
-}
-
-menu()
-
-
 // Importa a biblioteca readline-sync que permite interação do usuário no terminal
 const readlineSync = require('readline-sync') 
 
 // Declara o array que vai armazenar os personagens criados
-let Personagem = [] 
+let personagens = [] 
 
 // Função para criar um novo personagem a partir de perguntas para o usuário:
 /* 
    - Objetivo: Criar um novo personagem a partir das informações fornecidas pelo usuário.
    - Entradas: Solicita ao usuário o nome, classe, nível, pontos de vida (HP) e habilidades do personagem.
-   - Processo: Utiliza o método split para dividir a string de habilidades em um array, onde a vírgula separa
+   - Processo: split para dividir a string de habilidades em um array, onde a vírgula separa
    - Saída: Retorna um objeto que representa o personagem, contendo suas propriedades e um histórico de ações vazio.
 */
 function criarPersonagemComPrompt() {
@@ -213,17 +88,17 @@ function buscarPersonagem(nome) {
 // Função para listar todos os personagens em formato de tabela
 function listarPersonagens() {
     // Imprime a linha inicial da tabela
-    console.log('--------------------------------------------------');
+    console.log('---------------------------------------------------------------------')
 
     // Imprime o cabeçalho da tabela com as colunas Nome, Classe, Nível e HP
-    console.log('| Nome            | Classe        | Nível | HP  |');
+    console.log('| Nome            | Classe        | Nível               | HP         |')
 
     // Imprime a linha que separa o cabeçalho dos dados
-    console.log('--------------------------------------------------');
+    console.log('----------------------------------------------------------------------')
 
     // loop que percorre todo o array de personagens
     for (let i = 0; i < personagens.length; i++) {
-        const personagem = personagens[i]; // Acessa o personagem atual no índice 'i'
+        const personagem = personagens[i] // Acessa o personagem atual no índice 'i'
 
 
 /* Concatena e imprime as informações de nome, classe, nível e HP do personagem atual
@@ -238,14 +113,16 @@ HP:  4 caracteres no total
         console.log(
             '| ' + personagem.nome + ' '.repeat(16 - personagem.nome.length) + 
             '| ' + personagem.classe + ' '.repeat(14 - personagem.classe.length) + 
-            '| ' + personagem.nivel + ' '.repeat(6 - personagem.nivel.toString().length) + 
-            '| ' + personagem.hp + ' '.repeat(4 - personagem.hp.toString().length) + '|'
-        );
+            '| ' + personagem.nivel + ' '.repeat(20 - personagem.nivel.toString().length) + 
+            '| ' + personagem.hp + ' '.repeat(14 - personagem.hp.toString().length) + '|'
+        )
     }
 
     // Imprime a linha final da tabela
-    console.log('--------------------------------------------------');
+    console.log('----------------------------------------------------------------------')
 }
+
+
 
 
 /* 
@@ -324,3 +201,5 @@ function menu() {
 
 // Iniciar o menu do sistema
 menu() // Chama a função 'menu' para iniciar o sistema e exibir o menu para o usuário
+
+// nome dos integrantes: Diulie Telles, Vitoria Faller Bier, Talita Naibert
