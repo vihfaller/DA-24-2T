@@ -333,5 +333,5 @@ menu() // Chama a função 'menu' para iniciar o sistema e exibir o menu para o 
 <<<<<<< HEAD:TRABALHO B/pers2.js
 
 // nome dos integrantes: Diulie Telles, Vitoria Faller Bier, Talita Naibert
-=======
->>>>>>> ec39ba23060cb709b9422dd508a22192323fd659:TRABALHO B/personagens.js
+//=======
+//>>>>>>> ec39ba23060cb709b9422dd508a22192323fd659:TRABALHO B/personagens.js
